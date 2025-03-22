@@ -1,6 +1,36 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{tle}{
+  type=\acronymtype,
+  name={TLE},
+  description={two-line element set},
+  first={two-line element set (TLE)},
+  sort={TLE},
+  long={two-line element set},
+  longplural={two-line element sets},
+  short={TLE},
+}
+\newglossaryentry{sp3}{
+  type=\acronymtype,
+  name={SP3},
+  description={Standard Product 3 format for precise satellite ephemerides},
+  first={Standard Product 3 (SP3) format for precise satellite ephemerides},
+  sort={SP3},
+  long={Standard Product 3 format},
+  longplural={},
+  short={SP3},
+}
+\newglossaryentry{bpsk}{
+  type=\acronymtype,
+  name={BPSK},
+  description={Binary phase shift keying},
+  first={binary phase shift keying(BPSK)},
+  sort={3D},
+  long={binary phase shift keying},
+  longplural={},
+  short={3D},
+}
 \newglossaryentry{3d}{
   type=\acronymtype,
   name={3D},
