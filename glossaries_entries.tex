@@ -1,10 +1,20 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{sota}{
+  type=\acronymtype,
+  name={SOTA},
+  description={state of the art},
+  first={state of the art (SOTA)},
+  sort={SOTA},
+  long={state of the art},
+  longplural={},
+  short={SOTA},
+}
 \newglossaryentry{olt}{
   type=\acronymtype,
   name={OLT},
-  description={open-loop tracking},
+  description={Open-loop tracking},
   first={open-loop tracking (OLT)},
   sort={OLT},
   long={open-loop tracking},
@@ -14,7 +24,7 @@
 \newglossaryentry{clt}{
   type=\acronymtype,
   name={CLT},
-  description={closed-loop tracking},
+  description={Closed-loop tracking},
   first={closed-loop tracking (CLT)},
   sort={CLT},
   long={closed-loop tracking},
@@ -24,7 +34,7 @@
 \newglossaryentry{tle}{
   type=\acronymtype,
   name={TLE},
-  description={two-line element set},
+  description={Two-line element set},
   first={two-line element set (TLE)},
   sort={TLE},
   long={two-line element set},
@@ -275,6 +285,16 @@
   long={convolutional neural network},
   longplural={Convolutional neural networks},
   short={CNN},
+}
+\newglossaryentry{fcn}{
+  type=\acronymtype,
+  name={FCN},
+  description={Fully convolutional network},
+  first={fully convolutional network (FCN)},
+  sort={FCN},
+  long={fully convolutional network},
+  longplural={fully convolutional networks},
+  short={FCN},
 }
 \newglossaryentry{cnpq}{
   type=\acronymtype,
