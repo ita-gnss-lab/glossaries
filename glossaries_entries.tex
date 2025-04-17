@@ -1,40 +1,80 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
-\newglossaryentry{teste}{
+newglossaryentry{ssm}{
   type=\acronymtype,
-  name={teste},
-  description={teste},
-  first={teste (teste)},
-  sort={teste},
-  long={teste},
+  name={SSM},
+  description={state space model},
+  first={state space model (SSM)},
+  sort={SSM},
+  long={state space model},
   longplural={},
-  short={teste},
+  short={SSM},
+}
+\newglossaryentry{sota}{
+  type=\acronymtype,
+  name={SOTA},
+  description={state of the art},
+  first={state of the art (SOTA)},
+  sort={SOTA},
+  long={state of the art},
+  longplural={},
+  short={SOTA},
 }
 \newglossaryentry{olt}{
   type=\acronymtype,
   name={OLT},
-  description={open loop tracking},
-  first={open loop tracking (OLT)},
+  description={Open-loop tracking},
+  first={open-loop tracking (OLT)},
   sort={OLT},
-  long={open loop tracking},
+  long={open-loop tracking},
   longplural={},
   short={OLT},
 }
 \newglossaryentry{clt}{
   type=\acronymtype,
   name={CLT},
-  description={closed loop tracking},
-  first={closed loop tracking (CLT)},
+  description={Closed-loop tracking},
+  first={closed-loop tracking (CLT)},
   sort={CLT},
-  long={closed loop tracking},
+  long={closed-loop tracking},
   longplural={},
   short={CLT},
+}
+\newglossaryentry{solt}{
+  type=\acronymtype,
+  name={SOLT},
+  description={Semi-open loop tracking},
+  first={semi-open loop tracking (SOLT)},
+  sort={SOLT},
+  long={semi-open loop tracking},
+  longplural={},
+  short={SOLT},
+}
+\newglossaryentry{vlt}{
+  type=\acronymtype,
+  name={VLT},
+  description={Vector tracking loop},
+  first={vector tracking loop (VLT)},
+  sort={VLT},
+  long={vector tracking loop},
+  longplural={},
+  short={VLT},
+}
+\newglossaryentry{fpf}{
+  type=\acronymtype,
+  name={FPF},
+  description={Fixed position feedback},
+  first={fixed position feedback (FPF)},
+  sort={FPF},
+  long={fixed position feedback},
+  longplural={},
+  short={FPF},
 }
 \newglossaryentry{tle}{
   type=\acronymtype,
   name={TLE},
-  description={two-line element set},
+  description={Two-line element set},
   first={two-line element set (TLE)},
   sort={TLE},
   long={two-line element set},
@@ -286,6 +326,16 @@
   longplural={Convolutional neural networks},
   short={CNN},
 }
+\newglossaryentry{fcn}{
+  type=\acronymtype,
+  name={FCN},
+  description={Fully convolutional network},
+  first={fully convolutional network (FCN)},
+  sort={FCN},
+  long={fully convolutional network},
+  longplural={fully convolutional networks},
+  short={FCN},
+}
 \newglossaryentry{cnpq}{
   type=\acronymtype,
   name={CNPq},
@@ -497,10 +547,10 @@
   type=\acronymtype,
   name={FLL},
   description={Frequency-locked loop},
-  first={frequecny-locked loop (FLL)},
+  first={frequency-locked loop (FLL)},
   firstplural={Frequency-Locked Loops (FLLs)},
   sort={FLL},
-  long={frequecny-locked loop},
+  long={frequency-locked loop},
   longplural={Frequency-locked loops},
   plural={FLLs},
   short={FLL},
