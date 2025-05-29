@@ -1,13 +1,23 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{prn}{
+  type=\acronymtype,
+  name={PRN},
+  description={Pseudo-random noise},
+  first={pseudo-random noise (PRN)},
+  sort={PRN},
+  long={pseudo-random noise},
+  longplural={},
+  short={PRN},
+}
 \newglossaryentry{ied}{
   type=\acronymtype,
   name={I&D},
   description={Integrate-and-dump},
   first={integrate-and-dump (I&D)},
   sort={I&D},
-  long={Integrate-and-dump},
+  long={integrate-and-dump},
   longplural={},
   short={I&D},
 }
