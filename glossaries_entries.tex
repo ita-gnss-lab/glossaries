@@ -1,10 +1,30 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{ied}{
+  type=\acronymtype,
+  name={I&D},
+  description={Integrate-and-dump},
+  first={integrate-and-dump (I&D)},
+  sort={I&D},
+  long={Integrate-and-dump},
+  longplural={},
+  short={I&D},
+}
+\newglossaryentry{bpf}{
+  type=\acronymtype,
+  name={BPF},
+  description={Band-pass filter},
+  first={band-pass filter (BPF)},
+  sort={BPF},
+  long={band-pass filter},
+  longplural={},
+  short={BPF},
+}
 \newglossaryentry{pwe}{
   type=\acronymtype,
   name={PWE},
-  description={parabolic wave equation},
+  description={Parabolic wave equation},
   first={parabolic wave equation (PWE)},
   sort={PWE},
   long={parabolic wave equation},
@@ -24,10 +44,10 @@
 \newglossaryentry{cpssm}{
   type=\acronymtype,
   name={CPSSM},
-  description={Compact phase-screen based scintillation model},
-  first={Compact phase-screen based scintillation model (CPSSM)},
+  description={Compact Phase-Screen-Based Scintillation Model},
+  first={Compact Phase-Screen-Based Scintillation Model (CPSSM)},
   sort={CPSSM},
-  long={Compact phase-screen based scintillation model},
+  long={Compact Phase-Screen-Based Scintillation Model},
   longplural={},
   short={CPSSM},
 }
@@ -1367,10 +1387,10 @@
 \newglossaryentry{tppsm}{
   type=\acronymtype,
   name={TPPSM},
-  description={Two-component power-law phase screen model},
-  first={two-component power-law phase screen model (TPPSM)},
+  description={Two-Component Power-Law Phase-Screen Model},
+  first={Two-Component Power-Law Phase-Screen Model (TPPSM)},
   sort={TPPSM},
-  long={two-component power-law phase screen model},
+  long={Two-Component Power-Law Phase-Screen Model},
   short={TPPSM},
 }
 \newglossaryentry{tsc}{
