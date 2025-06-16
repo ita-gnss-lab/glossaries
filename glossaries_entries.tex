@@ -1,6 +1,26 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{nwpr}{
+  type=\acronymtype,
+  name={NWPR},
+  description={Narrowband-wideband power ratio},
+  first={narrowband-wideband power ratio (NWPR)},
+  sort={NWPR},
+  long={narrowband-wideband power ratioerror},
+  longplural={},
+  short={NWPR},
+}
+\newglossaryentry{mrmse}{
+  type=\acronymtype,
+  name={MRMSE},
+  description={Mean root mean-squared error},
+  first={mean root mean-squared error (MRMSE)},
+  sort={MRMSE},
+  long={mean root mean-squared error},
+  longplural={},
+  short={MRMSE},
+}
 \newglossaryentry{rmse}{
   type=\acronymtype,
   name={RMSE},
@@ -864,14 +884,41 @@
   plural={},
   short={ITU},
 }
+\newglossaryentry{ahl-kf-ar}{
+  type=\acronymtype,
+  name={AHL-KF-AR},
+  description={Adaptive Hard-limited Autoregressive Kalman filter},
+  first={Adaptive Hard-limited Autoregressive Kalman filter (AHL-KF-AR)},
+  sort={AHL-KF-AR},
+  long={Adaptive Hard-limited Autoregressive Kalman filter},
+  short={AHL-KF-AR},
+}
+\newglossaryentry{akf-ar}{
+  type=\acronymtype,
+  name={AKF-AR},
+  description={Autoregressive Adaptive Kalman filter},
+  first={Autoregressive Adaptive Kalman filter (AKF-AR)},
+  sort={AKF-AR},
+  long={Autoregressive Adaptive Kalman filter},
+  short={AKF-AR},
+}
 \newglossaryentry{kf-ar}{
   type=\acronymtype,
   name={KF-AR},
-  description={autoregressive Kalman filter},
-  first={autoregressive Kalman filter (KF-AR)},
+  description={Autoregressive Kalman filter},
+  first={Autoregressive Kalman filter (KF-AR)},
   sort={KF-AR},
-  long={autoregressive Kalman filter},
-  short={KF-AR},,,
+  long={Autoregressive Kalman filter},
+  short={KF-AR},
+}
+\newglossaryentry{a-kf}{
+  type=\acronymtype,
+  name={AKF},
+  description={Adaptive Kalman filter},
+  first={Adaptive Kalman filter (AKF)},
+  sort={AKF},
+  long={Adaptive Kalman filter},
+  short={AKF},
 }
 \newglossaryentry{kf}{
   type=\acronymtype,
