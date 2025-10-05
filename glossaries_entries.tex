@@ -1,13 +1,23 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{sar}{
+  type=\acronymtype,
+  name={SAR},
+  description={Synthetic Aperture Radar},
+  first={synthetic Aperture Radar (SAR)},
+  sort={SAR},
+  long={Synthetic Aperture Radar},
+  longplural={},
+  short={SAR},
+}
 \newglossaryentry{nwpr}{
   type=\acronymtype,
   name={NWPR},
   description={Narrowband-wideband power ratio},
   first={narrowband-wideband power ratio (NWPR)},
   sort={NWPR},
-  long={narrowband-wideband power ratioerror},
+  long={narrowband-wideband power ratio error},
   longplural={},
   short={NWPR},
 }
