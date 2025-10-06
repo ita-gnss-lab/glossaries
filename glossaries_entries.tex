@@ -1,13 +1,33 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{ipe}{
+  type=\acronymtype,
+  name={IPE},
+  description={Irregularity parameter estimation},
+  first={irregularity parameter estimation (IPE)},
+  sort={IPE},
+  long={irregularity parameter estimation},
+  longplural={},
+  short={IPE},
+}
+\newglossaryentry{ipe}{
+  type=\acronymtype,
+  name={IPE},
+  description={Irregularity parameter estimation},
+  first={irregularity parameter estimation (IPE)},
+  sort={IPE},
+  long={irregularity parameter estimation},
+  longplural={},
+  short={IPE},
+}
 \newglossaryentry{sar}{
   type=\acronymtype,
   name={SAR},
   description={Synthetic aperture radar},
   first={synthetic aperture radar (SAR)},
   sort={SAR},
-  long={Synthetic aperture radar},
+  long={synthetic aperture radar},
   longplural={},
   short={SAR},
 }
