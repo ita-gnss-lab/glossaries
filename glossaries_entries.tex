@@ -1,6 +1,36 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{rft}{
+  type=\acronymtype,
+  name={RFT},
+  description={Random Forest Tree},
+  first={Random Forest Tree (RFT)},
+  sort={RFT},
+  long={Random Forest Tree},
+  longplural={},
+  short={RFT},
+}
+\newglossaryentry{mten}{
+  type=\acronymtype,
+  name={MTEN},
+  description={Multi-task ElasticNet},
+  first={Multi-task ElasticNet (MTEN)},
+  sort={MTEN},
+  long={Multi-task ElasticNet},
+  longplural={},
+  short={MTEN},
+}
+\newglossaryentry{hgb}{
+  type=\acronymtype,
+  name={HGB},
+  description={Histogram-based Gradient Boosting Tree},
+  first={Histogram-based Gradient Boosting Tree (HGB)},
+  sort={HGB},
+  long={Histogram-based Gradient Boosting Tree},
+  longplural={},
+  short={HGB},
+}
 \newglossaryentry{dvc}{
   type=\acronymtype,
   name={DVC},
