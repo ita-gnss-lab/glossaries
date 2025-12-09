@@ -1,6 +1,7 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+<<<<<<< HEAD
 \newglossaryentry{rft}{
   type=\acronymtype,
   name={RFT},
@@ -30,6 +31,26 @@
   long={Histogram-based Gradient Boosting Tree},
   longplural={},
   short={HGB},
+\newglossaryentry{wbmod}{
+  type=\acronymtype,
+  name={WBMOD},
+  description={WideBand MODel},
+  first={WideBand MODel (WBMOD)},
+  sort={WBMOD},
+  long={WideBand MODel},
+  %   plural={},
+  short={WBMOD}
+}
+\newglossaryentry{nwra}{
+  type=\acronymtype,
+  name={NWRA},
+  description={NewWest Research Associates},
+  first={NewWest Research Associates (NWRA)},
+  sort={NWRA},
+  long={NewWest Research Associates},
+  %   plural={},
+  short={NWRA}
+>>>>>>> 11c7892cb6ed5bfc911df25243cdf685c965b8f4
 }
 \newglossaryentry{dvc}{
   type=\acronymtype,
