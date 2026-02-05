@@ -1,6 +1,86 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{sbc_sbi}{
+  type=\acronymtype,
+  name={SBC},
+  description={Simulator-Based Calibration},
+  first={Simulator-Based Calibration (SBC)},
+  sort={SBC},
+  long={Simulator-Based Calibration},
+  longplural={},
+  short={SBC},
+}
+\newglossaryentry{npe}{
+  type=\acronymtype,
+  name={NPE},
+  description={Neural Posterior Estimator},
+  first={Neural Posterior Estimator (NPE)},
+  sort={NPE},
+  long={Neural Posterior Estimator},
+  longplural={},
+  short={NPE},
+}
+\newglossaryentry{sbi}{
+  type=\acronymtype,
+  name={SBI},
+  description={Simulator-Based Inference},
+  first={Simulator-Based Inference (SBI)},
+  sort={SBI},
+  long={Simulator-Based Inference},
+  longplural={},
+  short={SBI},
+}
+\newglossaryentry{mape}{
+  type=\acronymtype,
+  name={MAPE},
+  description={Mean Absolute Percentage Error},
+  first={Mean Absolute Percentage Error (MAPE)},
+  sort={MAPE},
+  long={Mean Absolute Percentage Error},
+  longplural={},
+  short={MAPE},
+}
+\newglossaryentry{mae}{
+  type=\acronymtype,
+  name={MAE},
+  description={Mean Absolute Error},
+  first={Mean Absolute Error (MAE)},
+  sort={MAE},
+  long={Mean Absolute Error},
+  longplural={},
+  short={MAE},
+}
+\newglossaryentry{xgb}{
+  type=\acronymtype,
+  name={XGB},
+  description={Extreme Gradient Boosting},
+  first={Extreme Gradient Boosting (XGB)},
+  sort={XGB},
+  long={Extreme Gradient Boosting},
+  longplural={},
+  short={XGB},
+}
+\newglossaryentry{lse}{
+  type=\acronymtype,
+  name={LSE},
+  description={Least squares Error},
+  first={Least Squares Error (LSE)},
+  sort={LSE},
+  long={least squares error},
+  longplural={},
+  short={LSE},
+}
+\newglossaryentry{hpo}{
+  type=\acronymtype,
+  name={HPO},
+  description={Hyperparameter optimization},
+  first={hyperparameter optimization (HPO)},
+  sort={HPO},
+  long={Hyperparameter Optimization},
+  longplural={},
+  short={HPO},
+}
 \newglossaryentry{rft}{
   type=\acronymtype,
   name={RFT},
@@ -41,16 +121,6 @@
     longplural={},
     short={AACGM},
 }
-\newglossaryentry{hgb}{
-  type=\acronymtype,
-  name={HGB},
-  description={Histogram-based Gradient Boosting Tree},
-  first={Histogram-based Gradient Boosting Tree (HGB)},
-  sort={HGB},
-  long={Histogram-based Gradient Boosting Tree},
-  longplural={},
-  short={HGB},
-}
 \newglossaryentry{wbmod}{
   type=\acronymtype,
   name={WBMOD},
@@ -70,7 +140,6 @@
   long={NewWest Research Associates},
   %   plural={},
   short={NWRA}
->>>>>>> 11c7892cb6ed5bfc911df25243cdf685c965b8f4
 }
 \newglossaryentry{dvc}{
   type=\acronymtype,
@@ -635,15 +704,6 @@
   longplural={recurrent neural networks},
   short={RNN},
 }
-\newglossaryentry{ttm}{
-    type=\acronymtype,
-    name={TTM},
-    description={Tensor-times-matrix},
-    first={tensor-times-matrix (TTM)},
-    sort={TTM},
-    long={tensor-times-matrix},
-    short={TTM},
-}
 \newglossaryentry{bptt}{
   type=\acronymtype,
   name={BPTT},
@@ -1164,12 +1224,9 @@
   name={LNA},
   description={Low noise amplifier},
   first={low noise amplifier (LNA)},
-  firstplural={low noise amplifiers (LNAs)},
   sort={LNA},
   long={low noise amplifier},
-  longplural={low noise amplifiers},
   short={LNA},
-  shortplural={LNAs},
 }
 \newglossaryentry{los}{
   type=\acronymtype,
