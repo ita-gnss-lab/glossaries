@@ -1,6 +1,15 @@
 % to sort it, run `f=my_glossary_entries.tex; { head -n 3 "$f"; tail -n +4 "$f" | awk '{ gsub(/^}$/,"}\0"); print $0 }' | sort -z | tr -d '\0' | tail -n +2; } | sponge "$f"`
 % inspired by https://stackoverflow.com/a/67012044/23333162 (but modified by me)	
 % `sponge` command requires the `moreutils` package
+\newglossaryentry{rtl}{
+  type=\acronymtype,
+  name={RTL},
+  description={Register-transfer level},
+  first={register-transfer level (RTL)},
+  sort={RTL},
+  long={register-transfer level},
+  short={RTL},
+}
 \newglossaryentry{sbc_sbi}{
   type=\acronymtype,
   name={SBC},
